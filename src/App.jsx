@@ -4,6 +4,8 @@ import Header from './components/Header'
 import MainContent from './components/MainContent'
 import Footer from './components/Footer'
 import ReusableCss from './components/ReusableCss'
+import ProductInfo from './components1/ProductInfo'
+
 
 const App = () => {
   return (
@@ -12,6 +14,7 @@ const App = () => {
     <MainContent/>
    <Footer/>
    <ReusableCss/>
+   <ProductInfo/>
 
     </>
   )
