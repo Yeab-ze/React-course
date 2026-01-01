@@ -13,6 +13,7 @@
     "@tailwindcss/vite": "^4.1.18",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
+    "react-icons": "^5.5.0",
     "tailwindcss": "^4.1.18"
   },
   "devDependencies": {
@@ -26,19 +27,16 @@
     "globals": "^16.5.0",
     "vite": "^7.2.4"
   },
-  
   "emmet.includeLanguages": {
-  "javascript": "javascriptreact",
-  "typescript": "typescriptreact"
-},
-
-
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
   "compilerOptions": {
     "baseUrl": "src",
     "paths": {
-      "@/*": ["*"]
+      "@/*": [
+        "*"
+      ]
     }
   }
-
-
 }
