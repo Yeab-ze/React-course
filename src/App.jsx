@@ -5,6 +5,7 @@ import MainContent from './components/MainContent'
 import Footer from './components/Footer'
 import ReusableCss from './components/ReusableCss'
 import ProductInfo from './components1/ProductInfo'
+import LearnMap from './components1/LearnMap'
 
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
    <Footer/>
    <ReusableCss/>
    <ProductInfo/>
+   <LearnMap/>
 
     </>
   )
