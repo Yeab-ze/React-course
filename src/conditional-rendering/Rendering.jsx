@@ -1,13 +1,12 @@
-import React from 'react'
+const ValidPass = () => <h1 className="text-green-500">Valid password</h1>;
+const InValidPass = () => <h1 className="text-red-500">Invalid password</h1>;
 
-const Rendering = ({isValid}) => {
-    const valid = () => <h1 className='text-green-500'>Valid passowrd</h1>
-    const inValid = () => <h1 className='text-red-500'>invalid Password</h1>
+const Rendering = ({ isValid }) => {
   return (
     <div>
-        {isValid ? valid : inValid}
+      {isValid ? <ValidPass /> : <InValidPass />}
     </div>
-  )
-}
+  );
+};
 
-export default Rendering 
+export default Rendering;

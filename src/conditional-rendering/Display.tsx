@@ -1,12 +1,12 @@
-import React from 'react'
-import Rendering from './Rendering'
+import Rendering from "./Rendering";
 
 const Display = () => {
   return (
     <div>
-        <Rendering/>
+     <h1> this section come from rendering and display component</h1>
+      <Rendering isValid={false} />
     </div>
-  )
-}
+  );
+};
 
-export default Display
+export default Display;

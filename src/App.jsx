@@ -11,6 +11,8 @@ import ProductList from "./components/ProductList";
 import ProductCard from "./components/ProductCard";
 import Final from "./mapAndProps/Final";
 import Display from "./conditional-rendering/Display";
+import Login from "./auth/Login";
+import Cart from "./conditional rendeing2/Cart";
 
 
 const App = () => {
@@ -31,6 +33,10 @@ const App = () => {
 
     {/* rendering */}
     <Display/>
+    <Login/>
+
+    <h1>this text from card components</h1>
+    <Cart/>
     </>
   );
 };
