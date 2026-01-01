@@ -4,7 +4,7 @@ import { product, card, button, images } from "../assets/style";
 const ProductInfo = () => {
   return (
     <>
-      <div className="flex">
+      <div className="grid grid-cols md:grid-cols-3">
         <div className={card}>
           <img src={images.img1} alt="" />
           <h1>name:-{product.name}</h1>

@@ -14,6 +14,8 @@ import Display from "./conditional-rendering/Display";
 import Login from "./auth/Login";
 import Cart from "./conditional rendeing2/Cart";
 import Weathering from "./conditional rendeing2/Weathering";
+import UserStatus from "./conditional rendeing2/UserStatus";
+import Greeting from "./conditional rendeing2/Greeting";
 
 
 const App = () => {
@@ -34,13 +36,19 @@ const App = () => {
 
     {/* rendering */}
     <Display/>
-    <Login/>
+    <Login loggedIn={true} isAdmin={false}/>
 
     <h1>this text from card components</h1>
     <Cart/>
 
     <h1>text from weahter components</h1>
     <Weathering/>
+
+    <h1>value from userstatus components</h1>
+    <UserStatus  loggedIn={true} isAdmin={true}/>
+
+    <h1>value from greeting components</h1>
+    <Greeting timeOfDay={'morinig'}/>
     </>
   );
 };
