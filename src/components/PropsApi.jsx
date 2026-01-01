@@ -1,10 +1,8 @@
 import React from 'react'
 
-const PropsApi = ({name, price}) => {
+const PropsApi = () => {
   return (
-    <div>
-        <p>{name}--${price}</p>
-    </div>
+    <div>PropsApi</div>
   )
 }
 

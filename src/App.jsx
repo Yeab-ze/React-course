@@ -9,6 +9,8 @@ import LearnMap from "./components1/LearnMap";
 import UserList from "./components/UserList";
 import ProductList from "./components/ProductList";
 import ProductCard from "./components/ProductCard";
+import Final from "./mapAndProps/Final";
+
 
 const App = () => {
   return (
@@ -22,6 +24,9 @@ const App = () => {
       <UserList />
       <ProductList />
       <ProductCard />
+
+    {/* props learn  */}
+    <Final/>
     </>
   );
 };
