@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
 
-const Greeting = () => {
+const Greeting = ({ timeOfDay }) => {
   return (
-    <div>Greeting</div>
-  )
-}
+    <div>
+      {timeOfDay === "morinig" ? 
+        <h2>Good morinig</h2>
+       : 
+        <h2>Good afternoon</h2>
+      }
+    </div>
+  );
+};
 
-export default Greeting
+export default Greeting;
