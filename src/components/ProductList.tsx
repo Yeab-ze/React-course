@@ -38,12 +38,16 @@ const ProductList = () => {
       inStock: false,
     },
   ];
-  return
-   <>
+  return (
     <div>
-        
+      <h1 className="mt-9">procduc practice quetion</h1>
+      {products.map((product) => (
+        <p key={product.id}>
+          {product.category} {product.price} {product.name}
+        </p>
+      ))}
     </div>
-  </>;
+  );
 };
 
 export default ProductList;
