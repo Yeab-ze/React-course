@@ -10,4 +10,4 @@ const Rendering = ({isValid}) => {
   )
 }
 
-export default Rendering
+export default Rendering 
