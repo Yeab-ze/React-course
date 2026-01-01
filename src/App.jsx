@@ -13,6 +13,7 @@ import Final from "./mapAndProps/Final";
 import Display from "./conditional-rendering/Display";
 import Login from "./auth/Login";
 import Cart from "./conditional rendeing2/Cart";
+import Weathering from "./conditional rendeing2/Weathering";
 
 
 const App = () => {
@@ -37,6 +38,9 @@ const App = () => {
 
     <h1>this text from card components</h1>
     <Cart/>
+
+    <h1>text from weahter components</h1>
+    <Weathering/>
     </>
   );
 };
