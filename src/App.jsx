@@ -10,6 +10,7 @@ import UserList from "./components/UserList";
 import ProductList from "./components/ProductList";
 import ProductCard from "./components/ProductCard";
 import Final from "./mapAndProps/Final";
+import Display from "./conditional-rendering/Display";
 
 
 const App = () => {
@@ -27,6 +28,9 @@ const App = () => {
 
     {/* props learn  */}
     <Final/>
+
+    {/* rendering */}
+    <Display/>
     </>
   );
 };
