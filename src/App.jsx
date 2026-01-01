@@ -16,6 +16,8 @@ import Cart from "./conditional rendeing2/Cart";
 import Weathering from "./conditional rendeing2/Weathering";
 import UserStatus from "./conditional rendeing2/UserStatus";
 import Greeting from "./conditional rendeing2/Greeting";
+import ReactIcon from "./useReactIcon/ReactIcon";
+import EventHandling from "./eventhandling/EventHandling";
 
 
 const App = () => {
@@ -49,6 +51,12 @@ const App = () => {
 
     <h1>value from greeting components</h1>
     <Greeting timeOfDay={'morinig'}/>
+
+    <h1>react icon practice</h1>
+    <ReactIcon/>
+
+    <h1>from event handling components</h1>
+    <EventHandling/>
     </>
   );
 };
