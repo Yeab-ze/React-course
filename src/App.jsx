@@ -24,6 +24,8 @@ import LearnAdvArr from "./usestate/learn array in usestate/LearnAdvArr";
 import InstagramLike from "./usestate/learn array in usestate/InstagramLike";
 import UsestateChallange from "./usestate/usestateChallange/UsestateChallange";
 import Todolist from "./usestate/usestateChallange/Todolist";
+import Portal from "./LearnnReactPortal/Portal";
+import UseEffect from "./useeffect/UseEffect";
 
 
 const App = () => {
@@ -80,6 +82,12 @@ const App = () => {
     <UsestateChallange/> <br />
 
     <Todolist/>
+
+    <h1>from portal components</h1>
+    <Portal/>
+
+    <h1>from use effect compon</h1>
+    <UseEffect/>
 
      </>
   );

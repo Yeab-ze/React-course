@@ -1,21 +1,25 @@
-import React, {useState} from 'react'
+import React, { useState } from "react";
+import { CiSun } from "react-icons/ci";
+import { FaMoon } from "react-icons/fa";
 
 const Portal = () => {
-    const[sw, setSw] = useState(false)
-    const handletheme = () => {
-        setSw(!sw)
-    }
+  const [sw, setSw] = useState(false);
 
+  const handleTheme = () => {
+    setSw(prev => !prev);
+  };
 
   return (
-    <div>
-        <h2>make dark and light switch</h2>
-        <div>
-            {sw ? <p>dark</p> : <p>light</p>}
-           <button className='bg-blue-500' onClick={handletheme}>change theme</button>
-        </div>
-    </div>
-  )
-}
+    <div
+      className={`p-6 items-center flex rounded ${
+        sw ? "bg-gray-900 text-white" : "bg-white text-black"
+      }`}
+    >
+      <h2>Make dark and light switch</h2>
 
-export default Portal
+      <p onClick={handleTheme} className=" outline-2 rounded-full cursor-pointer p-3 ml-2">{sw ? <CiSun /> :  <FaMoon />}</p>
+    </div>
+  );
+};
+
+export default Portal;
