@@ -21,6 +21,9 @@ import EventHandling from "./eventhandling/EventHandling";
 import LearnUseState from "./usestate/LearnUseState";
 import ArrayInUseState from "./usestate/learn array in usestate/ArrayInUseState";
 import LearnAdvArr from "./usestate/learn array in usestate/LearnAdvArr";
+import InstagramLike from "./usestate/learn array in usestate/InstagramLike";
+import UsestateChallange from "./usestate/usestateChallange/UsestateChallange";
+import Todolist from "./usestate/usestateChallange/Todolist";
 
 
 const App = () => {
@@ -69,6 +72,15 @@ const App = () => {
 
     <h1>learn advance array in usestate</h1>
     <LearnAdvArr/>
+
+    <h1>from instagram like components</h1>
+    <InstagramLike/> 
+
+    <h1>from use state challange</h1>
+    <UsestateChallange/> <br />
+
+    <Todolist/>
+
      </>
   );
 };
