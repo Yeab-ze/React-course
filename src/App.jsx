@@ -18,6 +18,9 @@ import UserStatus from "./conditional rendeing2/UserStatus";
 import Greeting from "./conditional rendeing2/Greeting";
 import ReactIcon from "./useReactIcon/ReactIcon";
 import EventHandling from "./eventhandling/EventHandling";
+import LearnUseState from "./usestate/LearnUseState";
+import ArrayInUseState from "./usestate/learn array in usestate/ArrayInUseState";
+import LearnAdvArr from "./usestate/learn array in usestate/LearnAdvArr";
 
 
 const App = () => {
@@ -57,7 +60,16 @@ const App = () => {
 
     <h1>from event handling components</h1>
     <EventHandling/>
-    </>
+
+    <h1>learning use state</h1>
+    <LearnUseState/>
+
+    <h1>learn array in usestate</h1>
+    <ArrayInUseState/>
+
+    <h1>learn advance array in usestate</h1>
+    <LearnAdvArr/>
+     </>
   );
 };
 
