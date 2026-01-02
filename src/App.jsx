@@ -27,6 +27,7 @@ import Todolist from "./usestate/usestateChallange/Todolist";
 import Portal from "./LearnnReactPortal/Portal";
 import UseEffect from "./useeffect/UseEffect";
 import Users from "./useeffect/Users";
+import BasicEffect from "./useeffect/BasicEffect";
 
 
 const App = () => {
@@ -92,6 +93,9 @@ const App = () => {
 
     <h1>from fetch data users compontens</h1>
     <Users/>
+
+    <h1>from basicuseeddect components</h1>
+    <BasicEffect/>
      </>
   );
 };

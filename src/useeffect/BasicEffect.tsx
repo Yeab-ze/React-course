@@ -1,12 +1,18 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 
 const BasicEffect = () => {
-    useEffect(() => {
-      console.log('this message from useeffect components')
-    }, [])
+    const [count, segCount] = useState(0)
+    // useEffect(() => {
+    //   console.log('this message from useeffect components')
+    // }, [])
     
+    useEffect(() => {
+     document.title = `count ${count}`;
+    }, [count])
   return (
-    <div>BasicEffect</div>
+    <div>
+        <button onClick={() => segCount(count + 1)}>count</button>
+    </div>
   )
 }
 
