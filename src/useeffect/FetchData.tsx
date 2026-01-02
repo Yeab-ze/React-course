@@ -13,7 +13,6 @@ const FetchData = () => {
       }
 
       const data = await res.json();
-      setUsers(data.slice(0, 10));
     } catch (e) {
       setError(e.message);
     }
