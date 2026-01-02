@@ -13,8 +13,8 @@ const FetchData = () => {
       }
 
       const data = await res.json();
-    } catch (e) {
-      setError(e.message);
+    } catch (err) {
+      setError(err.message);
     }
   };
 
