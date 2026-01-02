@@ -28,6 +28,7 @@ import Portal from "./LearnnReactPortal/Portal";
 import UseEffect from "./useeffect/UseEffect";
 import Users from "./useeffect/Users";
 import BasicEffect from "./useeffect/BasicEffect";
+import FetchData from "./useeffect/FetchData";
 
 
 const App = () => {
@@ -96,6 +97,9 @@ const App = () => {
 
     <h1>from basicuseeddect components</h1>
     <BasicEffect/>
+
+    <h1>from fetchdata useeffect components</h1>
+    <FetchData/>
      </>
   );
 };
