@@ -28,7 +28,7 @@ const FetchData = () => {
 
       {error && <p className="text-red-500 font-bold">{error}</p>}
 
-      {users.map(user => (
+      {users.map((user) => (
         <p key={user.id}>{user.email}</p>
       ))}
     </div>
