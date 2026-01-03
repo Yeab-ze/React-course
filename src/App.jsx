@@ -29,6 +29,8 @@ import UseEffect from "./useeffect/UseEffect";
 import Users from "./useeffect/Users";
 import BasicEffect from "./useeffect/BasicEffect";
 import FetchData from "./useeffect/FetchData";
+import Againfetch from "./useeffect/Againfetch";
+import DisplayProp from "./propdriling/DisplayProp";
 
 
 const App = () => {
@@ -100,6 +102,12 @@ const App = () => {
 
     <h1>from fetchdata useeffect components</h1>
     <FetchData/>
+
+    <h1>practice by yours fetch section</h1>
+    <Againfetch/>
+
+    <h1>learn prop driling</h1>
+    <DisplayProp/>
      </>
   );
 };
