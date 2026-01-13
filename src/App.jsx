@@ -28,12 +28,19 @@ import Portal from "./LearnnReactPortal/Portal";
 import UseEffect from "./useeffect/UseEffect";
 import Users from "./useeffect/Users";
 import BasicEffect from "./useeffect/BasicEffect";
-import FetchData from "./useeffect/FetchData";
-import Againfetch from "./useeffect/Againfetch";
-import DisplayProp from "./propdriling/DisplayProp";
-
-
+// import FetchData from "./useeffect/FetchData";
+// import Againfetch from "./useeffect/Againfetch";
+import ToyContext from "./creactcontext/ToyContext";
+import Child from "./Child";
+import ComponentsA from "./propdriling/ComponentsA";
 const App = () => {
+  
+  // this is for prop drilling  purpose
+  const username = "yeab prop driling";
+
+  //for creact contexxt purpose
+ const toy = "Teddy Bear"
+
   return (
     <>
       <Header /> <br />
@@ -45,70 +52,55 @@ const App = () => {
       <UserList />
       <ProductList />
       <ProductCard />
-
-    {/* props learn  */}
-    <Final/>
-
-    {/* rendering */}
-    <Display/>
-    <Login loggedIn={true} isAdmin={false}/>
-
-    <h1>this text from card components</h1>
-    <Cart/>
-
-    <h1>text from weahter components</h1>
-    <Weathering/>
-
-    <h1>value from userstatus components</h1>
-    <UserStatus  loggedIn={true} isAdmin={true}/>
-
-    <h1>value from greeting components</h1>
-    <Greeting timeOfDay={'morinig'}/>
-
-    <h1>react icon practice</h1>
-    <ReactIcon/>
-
-    <h1>from event handling components</h1>
-    <EventHandling/>
-
-    <h1>learning use state</h1>
-    <LearnUseState/>
-
-    <h1>learn array in usestate</h1>
-    <ArrayInUseState/>
-
-    <h1>learn advance array in usestate</h1>
-    <LearnAdvArr/>
-
-    <h1>from instagram like components</h1>
-    <InstagramLike/> 
-
-    <h1>from use state challange</h1>
-    <UsestateChallange/> <br />
-
-    <Todolist/>
-
-    <h1>from portal components</h1>
-    <Portal/>
-
-    <h1>from use effect compon</h1>
-    <UseEffect/>
-
-    <h1>from fetch data users compontens</h1>
-    <Users/>
-
-    <h1>from basicuseeddect components</h1>
-    <BasicEffect/>
-
-    <h1>from fetchdata useeffect components</h1>
-    <FetchData/>
-
-    <h1>practice by yours fetch section</h1>
-    <Againfetch/>
-
-    <h1>learn prop driling</h1>
-    <DisplayProp/>
-     </>
+      {/* props learn  */}
+      <Final />
+      {/* rendering */}
+      <Display />
+      <Login loggedIn={true} isAdmin={false} />
+      <h1>this text from card components</h1>
+      <Cart />
+      <h1>text from weahter components</h1>
+      <Weathering />
+      <h1>value from userstatus components</h1>
+      <UserStatus loggedIn={true} isAdmin={true} />
+      <h1>value from greeting components</h1>
+      <Greeting timeOfDay={"morinig"} />
+      <h1>react icon practice</h1>
+      <ReactIcon />
+      <h1>from event handling components</h1>
+      <EventHandling />
+      <h1>learning use state</h1>
+      <LearnUseState />
+      <h1>learn array in usestate</h1>
+      <ArrayInUseState />
+      <h1>learn advance array in usestate</h1>
+      <LearnAdvArr />
+      <h1>from instagram like components</h1>
+      <InstagramLike />
+      <h1>from use state challange</h1>
+      <UsestateChallange /> <br />
+      <Todolist />
+      <h1>from portal components</h1>
+      <Portal />
+      <h1>from use effect compon</h1>
+      <UseEffect />
+      <h1>from fetch data users compontens</h1>
+      <Users />
+      <h1>from basicuseeddect components</h1>
+      <BasicEffect />
+      <h1>from fetchdata useeffect components</h1>
+      <FetchData />
+      <h1>practice by yours fetch section</h1>
+      <Againfetch />
+      <h1>learn prop driling</h1>
+      <ComponentsA username={username} />
+      <h1>learn creactecontext</h1>
+       <ToyContext.Provider value={toy}>
+   
+        <h1>Parent App</h1>
+        <Child />
+    </ToyContext.Provider>
+    </>
   );
 };
 
