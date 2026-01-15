@@ -5,7 +5,7 @@ import MainContent from "./components/MainContent";
 import Footer from "./components/Footer";
 import ReusableCss from "./components/ReusableCss";
 import ProductInfo from "./components1/ProductInfo";
-import LearnMap from "./components1/LearnMap";
+// import LearnMap from "./components1/LearnMap";
 import UserList from "./components/UserList";
 import ProductList from "./components/ProductList";
 import ProductCard from "./components/ProductCard";
@@ -30,16 +30,12 @@ import Users from "./useeffect/Users";
 import BasicEffect from "./useeffect/BasicEffect";
 // import FetchData from "./useeffect/FetchData";
 // import Againfetch from "./useeffect/Againfetch";
-import ToyContext from "./creactcontext/ToyContext";
-import Child from "./Child";
+// import ToyContext from "./creactcontext/ToyContext";
+// import Child from "./Child";
 import ComponentsA from "./propdriling/ComponentsA";
 const App = () => {
-  
   // this is for prop drilling  purpose
   const username = "yeab prop driling";
-
-  //for creact contexxt purpose
- const toy = "Teddy Bear"
 
   return (
     <>
@@ -95,11 +91,6 @@ const App = () => {
       <h1>learn prop driling</h1>
       <ComponentsA username={username} />
       <h1>learn creactecontext</h1>
-       <ToyContext.Provider value={toy}>
-   
-        <h1>Parent App</h1>
-        <Child />
-    </ToyContext.Provider>
     </>
   );
 };

@@ -13,7 +13,6 @@ const Parent = () => {
             name={product.name}
             price={product.price}
             desc={product.desc}
-           
           />
         ))}
       </div>
